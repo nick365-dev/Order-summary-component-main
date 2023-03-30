@@ -1,0 +1,166 @@
+/*Weights: 500, 700, 900
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%) */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    position:relative;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    background: #FFF;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+h1 {
+    /*padding: 1.2em 1.5em 0.5em 2.7em;*/
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+p{
+    padding: 0.5em 1.5em 2em 4em;
+    line-height: 1.5em;
+}
+
+.plan-box{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.plan-box a.cambio:hover{
+    text-decoration: none;
+    color: hsl(245, 75%, 23%);
+    transition: color .3s ease;
+}
+
+.plan-box-left{
+    display:flex;
+    align-items: center;
+    
+}
+
+
+h2{
+    font-size: 15px;
+}
+
+p{
+
+    color: #8a8a8a;
+}
+
+.plan-anual {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan-anual p{
+    padding: 0.1em;
+}
+
+.plan-anual h2{
+    padding: 0.1em;
+}
+
+a.cancelar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4em;
+    
+    
+}
+
+.icon-music{
+    padding: 2em 0.5em 2em 2em;
+}
+
+.linea2{
+    padding: 0.5em;
+}
+
+.cancelar{
+    margin-bottom: 1.5em;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a.cancelar:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+a.cambio{
+    padding: 2em 4em;
+}
+
+.boton{
+    display: flex;
+    align-items: center;
+    padding: 0.1em 0.1em 0.1em 3em;
+}
+
+button{
+    border:none;
+    background: hsl(245, 75%, 52%);
+    color: #FFF;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 1em 9em 1em 9em;
+    
+}
+
+button:hover{
+    background-color: hsl(224, 23%, 55%);
+    transition: background-color .3s ease;
+}
+
+@media only screen and (max-width: 425px) {
+    body {
+        min-width: 390px;
+        background-image: url(images/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+    .container{
+        max-width: 87%;
+    }
+    button {
+        padding: 1em 5em 1em 5em;
+    }
+}
+
+
+
